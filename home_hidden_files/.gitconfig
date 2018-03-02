@@ -1,0 +1,18 @@
+[user]
+	name = Korei Klein
+	email = korei@ginkgobioworks.com
+[alias]
+	ci = commit
+	co = checkout
+	br = branch
+	st = status
+	di = diff --color
+	mg = merge --no-ff
+[push]
+        default = current
+[heroku]
+	remote = outlearn-nest-staging
+[merge]
+	tool = nvim
+[core]
+	editor = nvim

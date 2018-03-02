@@ -1,0 +1,10 @@
+{
+	"optOut": false,
+	"lastUpdateCheck": 1505223217452,
+	"update": {
+		"latest": "1.5.4",
+		"current": "0.16.0",
+		"type": "major",
+		"name": "polymer-cli"
+	}
+}

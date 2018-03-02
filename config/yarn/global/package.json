@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "sql-to-graphql": "^2.0.9"
+  }
+}
