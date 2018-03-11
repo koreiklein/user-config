@@ -1,4 +1,5 @@
 
+
 for rcfile in `ls -A ./home_hidden_files/` ; do
   homerc=~/$rcfile
 

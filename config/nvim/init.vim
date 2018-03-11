@@ -39,6 +39,10 @@ Plugin 'ap/vim-buftabline' " Show buffers at the top
 Plugin 'editorconfig/editorconfig-vim' " Understand and follow the rules in editorconfig files
 Plugin 'tpope/vim-fugitive' " For interacting with git from within vim
 Plugin 'sjl/badwolf' " A nice colorscheme
+Plugin 'let-def/vimbufsync' " Needed for coquille
+Plugin 'trefis/coquille.git' " For coq
+Plugin 'fatih/vim-go' " For golang
+Plugin 'jodosha/vim-godebug' " For debugging golang source
 
 " Plugin 'vim-syntastic/syntastic' " 
 
@@ -77,6 +81,10 @@ set shiftwidth=2  " Use 4 spaces for each insertion of (auto)indent
 set softtabstop=2 " Tabs 'count for' 4 spaces when editing (fake tabs)
 set expandtab     " <tab> -> spaces in insert mode
 
+" Shift highlighted region left or right
+vmap <Tab> >gv
+vmap <S-Tab> <gv
+
 set hidden
 nnoremap ) :bnext<CR>
 nnoremap ( :bprev<CR>
@@ -90,3 +98,9 @@ call neomake#configure#automake('nw', 750) " When writing a buffer, and on norma
 call neomake#configure#automake('rw', 1000) " When reading a buffer (after 1s), and when writing.
 
 let g:airline_theme='jellybeans'
+" let g:airline_powerline_fonts=1 " For arrows in the airline
+
+let g:python_host_prog='/usr/local/bin/python3'
+let g:python3_host_prog='/usr/local/bin/python3'
+
+" au BufReadPost,BufNewFile *.v :CoqLaunch<cr>
