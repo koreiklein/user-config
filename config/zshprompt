@@ -1,0 +1,10 @@
+#PS1="${GREEN}[%m %h%1(j.%%%j.)%0(?..:${HIRED}%?)${GREEN}]${HIGREEN}%# ${NORM}"
+#PS1="${GREEN}[%m]${HIGREEN}%# ${NORM}"
+
+
+PS1=" ${HIGREEN}%# ${NORM}"
+RPS1="${YELLOW}%~ ${GREEN}%t${NORM}"
+
+if [ "prod" = "${MICROPAYWALL_ENV}" ]; then
+  PS1=" ${RED}(micropaywall_production) %# ${NORM}"
+fi
